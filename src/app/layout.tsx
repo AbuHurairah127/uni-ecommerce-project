@@ -9,7 +9,7 @@ import ReduxProvider from "@/components/reduxProvider/ReduxProvider";
 export const sora = Sora({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "FAB Threads",
+  title: "FABthreads",
   description: "Ignite Your Wardrobe with FABulous clothes",
 };
 
