@@ -1,3 +1,4 @@
+"use client";
 import { Sora } from "next/font/google";
 import Hero from "@/sections/home/hero/Hero";
 import Promotions from "@/sections/home/promotions/Promotions";
