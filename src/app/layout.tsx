@@ -8,11 +8,6 @@ import { ClerkProvider } from "@clerk/nextjs";
 import ReduxProvider from "@/components/reduxProvider/ReduxProvider";
 export const sora = Sora({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "FABthreads",
-  description: "Ignite Your Wardrobe with FABulous clothes",
-};
-
 export default function RootLayout({
   children,
 }: {
