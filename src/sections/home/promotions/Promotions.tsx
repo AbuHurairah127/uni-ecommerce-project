@@ -68,7 +68,7 @@ const Promotions = () => {
       transition: {
         duration: 0.7,
         type: "spring",
-        delay: 0.56,
+        delay: 0.16,
       },
     },
   };

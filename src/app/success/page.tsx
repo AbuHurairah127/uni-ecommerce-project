@@ -5,7 +5,7 @@ import ConfettiProvider from "./ConfettiProvider";
 const CheckoutSuccess = () => {
   return (
     <>
-      <div className="w-screen h-screen absolute top-0 left-0 z-0 ">
+      <div className="w-full h-screen absolute top-0 left-0 z-0 overflow-x-hidden ">
         <ConfettiProvider />{" "}
       </div>
       <div className="success min-h-[50vh] flex flex-col justify-center items-center z-10 relative">

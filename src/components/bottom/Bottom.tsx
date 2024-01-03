@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@/assets/logo_image.png";
+import logo from "./../../../public/FAB logo.jpg";
 import {
   Facebook,
   FacebookIcon,
@@ -13,7 +13,12 @@ const Bottom = () => {
   return (
     <div className="max-w-screen lg:h-80 px-24 flex flex-col lg:flex-row mb-8 lg:mb-0">
       <div className="lg:w-1/3 flex-col lg:flex-row">
-        <Image src={logo} alt={"logo"} width={200} />
+        <Image
+          src={logo}
+          alt={"logo"}
+          width={200}
+          className="w-20 rounded-full aspect-square"
+        />
         <p className="text-[#666666] my-8 ml-2 mr-8">
           Small, artisan label that offers a thoughtfully curated collection of
           high quality everyday essentials made.
