@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { fetchData } from "@/sanity/sanity-utils";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Products = () => {
   const settings = {
@@ -47,6 +48,7 @@ const Products = () => {
       },
     ],
   };
+  const router = useRouter();
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchDataAsync = async () => {
@@ -55,7 +57,10 @@ const Products = () => {
     };
 
     fetchDataAsync();
-  }, []);
+    if (!data) {
+      router.push("/no-internet");
+    }
+  }, [data, router]);
 
   return (
     <div className="h-[85vh] lg:min-h-screen max-w-screen flex flex-col space-y-5 justify-center items-center lg:px-24">

@@ -109,3 +109,58 @@ body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 0px;
 }
+.text-container {
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite;
+}
+
+.text1 {
+  transform-style: preserve-3d;
+  transform: rotateX(36deg) translateZ(45px);
+}
+.text2 {
+  transform-style: preserve-3d;
+  transform: rotateX(72deg) translateZ(45px);
+}
+.text3 {
+  transform-style: preserve-3d;
+  transform: rotateX(108deg) translateZ(45px);
+}
+.text4 {
+  transform-style: preserve-3d;
+  transform: rotateX(144deg) translateZ(45px);
+}
+.text5 {
+  transform-style: preserve-3d;
+  transform: rotateX(180deg) translateZ(45px);
+}
+.text6 {
+  transform-style: preserve-3d;
+  transform: rotateX(216deg) translateZ(45px);
+}
+.text7 {
+  transform-style: preserve-3d;
+  transform: rotateX(252deg) translateZ(45px);
+}
+.text8 {
+  transform-style: preserve-3d;
+  transform: rotateX(288deg) translateZ(45px);
+}
+.text9 {
+  transform-style: preserve-3d;
+  transform: rotateX(324deg) translateZ(45px);
+}
+.text10 {
+  transform-style: preserve-3d;
+  transform: rotateX(360deg) translateZ(45px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateX(0deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateX(360deg);
+  }
+}

@@ -9,7 +9,9 @@ const CheckoutSuccess = () => {
         <ConfettiProvider />{" "}
       </div>
       <div className="success min-h-[50vh] flex flex-col justify-center items-center z-10 relative">
-        <h1 className="text-3xl font-bold">Thank you for your order!</h1>
+        <h1 className="text-3xl font-bold text-center">
+          Thank you for your order!
+        </h1>
         <p className="description">
           If you have any questions, please email:&nbsp;
           <a
@@ -19,6 +21,7 @@ const CheckoutSuccess = () => {
             dev.abuhurairah@gmail.com
           </a>
         </p>
+
         <Link
           href={"/allProducts"}
           className="bg-black text-white text-md font-semibold rounded-none py-5 w-fit px-8 mt-10 flex"
